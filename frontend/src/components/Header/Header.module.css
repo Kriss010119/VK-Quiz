@@ -1,0 +1,41 @@
+.header {
+  background: var(--color-primary-dark);
+  padding: var(--spacing-4) var(--spacing-8);
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logoBold {
+  color: var(--text-white);
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logoLight {
+  color: var(--text-white);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  margin-left: var(--spacing-2);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: var(--spacing-3) var(--spacing-4);
+  }
+  
+  .logoBold {
+    font-size: var(--font-size-4xl);
+  }
+  
+  .logoLight {
+    font-size: var(--font-size-sm);
+    display: block;
+    margin-left: 0;
+    margin-top: var(--spacing-1);
+  }
+}

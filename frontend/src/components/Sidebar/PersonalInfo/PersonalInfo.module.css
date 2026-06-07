@@ -1,0 +1,53 @@
+.personalInfo {
+  background: #0277FF;
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.avatarWrapper {
+  flex-shrink: 0;
+}
+
+.userTextInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.userName {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0 0 0.125rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userEmail {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .personalInfo {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  .userName {
+    font-size: 0.75rem;
+  }
+  
+  .userEmail {
+    font-size: 0.625rem;
+  }
+}

@@ -1,0 +1,15 @@
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #6b7280;
+  font-family: "Intel One Mono", monospace;
+}
+
+.emptyState img {
+  width: 120px;
+  height: auto;
+}

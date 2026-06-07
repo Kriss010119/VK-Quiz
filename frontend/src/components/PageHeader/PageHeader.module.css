@@ -1,0 +1,76 @@
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 1rem;
+  background: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.backBtn {
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: left;
+}
+
+.title {
+  color: #000000;
+  font-family: "Intel One Mono", monospace;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.totalCount {
+  font-size: 12px;
+  color: #6b7280;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .headerRow {
+    padding: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .title {
+    font-size: 16px;
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .backBtn {
+    order: 0;
+  }
+  
+  .totalCount {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .backBtn {
+    text-align: center;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .totalCount {
+    text-align: center;
+  }
+}

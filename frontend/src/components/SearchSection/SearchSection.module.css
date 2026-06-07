@@ -1,0 +1,117 @@
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.searchResultsCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.searchResultsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.searchResultsTitleBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.searchResultsTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0277FF;
+  margin: 0;
+  font-family: 'Intel One Mono', monospace;
+  letter-spacing: 0.5px;
+}
+
+.searchResultsCount {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.closeSearchBtn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #6b7280;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.closeSearchBtn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.searchResultsContent {
+  padding: 1.5rem;
+  min-height: 300px;
+}
+
+.searchGroup {
+  margin-bottom: 2rem;
+}
+
+.searchGroup:last-child {
+  margin-bottom: 0;
+}
+
+.searchGroupTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0277FF;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #0277FF;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.searchResultsContent :global(.cardsGrid) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .searchResultsHeader {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .searchResultsTitleBlock {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .searchResultsContent {
+    padding: 1rem;
+  }
+  
+  .searchResultsContent :global(.cardsGrid) {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .searchGroupTitle {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}

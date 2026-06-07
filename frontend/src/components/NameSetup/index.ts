@@ -1,0 +1,1 @@
+export { NameSetup } from './NameSetup';

@@ -1,0 +1,138 @@
+.button {
+  border: none;
+  border-radius: 10px;
+  font-family: 'Intel One Mono', 'Courier New', monospace;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.primary {
+  background: #0277FF;
+  color: white;
+}
+
+.secondary {
+  background: #C5DEFF;
+  color: #0277FF;
+}
+
+.danger {
+  background: rgba(255, 0, 0, 0.35);
+  color: white;
+}
+
+.warning {
+  background: rgba(255, 136, 0, 0.35);
+  color: white;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #0277FF;
+  color: #0277FF;
+}
+
+.text {
+  background: #000;
+  color: white;
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.text:hover {
+  background: #000000ba;
+}
+
+.sm {
+  padding: 8px 16px;
+  font-size: 12px;
+  height: 36px;
+  min-width: 80px;
+}
+
+.md {
+  padding: 10px 20px;
+  font-size: 13px;
+  height: 44px;
+  min-width: 100px;
+}
+
+.lg {
+  padding: 12px 24px;
+  font-size: 14px;
+  height: 52px;
+  min-width: 120px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.loadMore {
+  background: transparent;
+  color: #0277ff;
+  padding: 0;
+  font-weight: 400;
+  position: relative;
+  width: 85px;
+  height: 21px;
+  display: block;
+  border-radius: 0;
+}
+
+.loadMore::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c5deff;
+  border-radius: 10px;
+  z-index: 0;
+  transition: all 0.2s ease;
+}
+
+.loadMore span {
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+}
+
+.loadMore:hover::before {
+  background-color: #b0d0ff;
+  transform: scale(1.02);
+}
+
+.loadMore:active::before {
+  transform: scale(0.98);
+}
+
+.loadMore:disabled::before {
+  background-color: #c5deff;
+  opacity: 0.6;
+}
+
+.loadMore:hover {
+  transform: none;
+  opacity: 1;
+}

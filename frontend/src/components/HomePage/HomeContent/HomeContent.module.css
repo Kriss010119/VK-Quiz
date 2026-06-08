@@ -1,0 +1,40 @@
+.mainContent {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  gap: 2rem;
+  width: calc(100% - 280px);
+  box-sizing: border-box;
+}
+
+.leftColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.rightColumn {
+  width: 0;
+  overflow: visible;
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    flex-direction: column;
+    padding: 1.5rem;
+    width: calc(100% - 260px);
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+}

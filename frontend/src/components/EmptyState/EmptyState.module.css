@@ -1,0 +1,7 @@
+.emptyState {
+  padding: 1rem;
+  text-align: center;
+  color: gray;
+  background: white;
+  border-radius: 10px;
+}

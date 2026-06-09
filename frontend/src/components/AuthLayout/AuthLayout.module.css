@@ -1,0 +1,130 @@
+.background {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.leftPanel {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 38vw;
+  min-width: 440px;
+  background: var(--color-primary);
+  z-index: 1;
+}
+
+.quizTitle {
+  position: absolute;
+  left: 130px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  color: var(--text-white);
+  font-size: 92px;
+  font-weight: 300;
+  line-height: 1;
+  z-index: 10;
+}
+
+.waves {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.wave1 {
+  width: 79vw;
+}
+
+.wave2 {
+  width: 74vw;
+}
+
+.wave3 {
+  width: 68vw;
+}
+
+.formContainer {
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.formCard {
+  width: 500px;
+  background: var(--color-primary);
+  border: 12px solid #F4F4F4;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+}
+
+.title {
+  color: var(--text-white);
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: var(--spacing-6);
+}
+
+.footerLinks {
+  text-align: center;
+  margin-top: var(--spacing-5);
+  color: var(--text-white);
+  font-size: var(--font-size-md);
+}
+
+.footerLinks a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.footerLinks span {
+  margin: 0 var(--spacing-2);
+}
+
+@media (max-width: 1200px) {
+  .quizTitle {
+    left: 50px;
+    font-size: var(--font-size-5xl);
+    gap: 50px;
+  }
+  .formContainer {
+    right: 8%;
+  }
+}
+
+@media (max-width: 900px) {
+  .leftPanel,
+  .waves {
+    display: none;
+  }
+  .background {
+    background: var(--color-primary);
+  }
+  .formContainer {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+  .formCard {
+    width: min(92vw, 500px);
+  }
+}

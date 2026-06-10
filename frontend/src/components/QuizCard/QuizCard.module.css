@@ -1,0 +1,289 @@
+.quizCard {
+  width: 240px;
+  min-height: 340px;
+  background: #E8F1FD;
+  border: 3px solid #C5DEFF;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.quizCard:hover {
+  background: #d5e7ff;
+  .roomCode {
+    background: #a8ceff;
+  }
+}
+
+.roomCode {
+  width: 100%;
+  background: #C5DEFF;
+  border: 2px solid #0088FF;
+  border-radius: 20px;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #0088FF;
+  text-transform: uppercase;
+  font-family: 'Intel One Mono', 'Courier New', monospace;
+  margin-bottom: 8px;
+}
+
+.status {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #0277FF;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.statusWaiting .statusDot { 
+  background: #2196f3; 
+  animation: pulse 1.5s infinite;
+}
+.statusProgress .statusDot { background: #0277FF; }
+.statusFinished .statusDot { background: #9ca3af; }
+.statusDraft .statusDot { background: #9ca3af; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.contentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.author {
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 10px;
+  text-align: right;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 11px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 45px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  background: #C5DEFF;
+  color: #0277FF;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.tagMore {
+  background: #e5e7eb;
+  color: #6b7280;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.joinBtn {
+  flex: 1;
+  background: #0277FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.joinBtn:hover {
+  background: #0056b3;
+  transform: scale(0.98);
+}
+
+.likeBtn {
+  width: 36px;
+  background: #f0f4fa;
+  color: #0277FF;
+  border: 1px solid #c5deff;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.likeBtn:hover {
+  background: #e3eaf5;
+  transform: scale(0.98);
+}
+
+.likeBtn.liked {
+  background: #0277FF;
+  color: white;
+  border: none;
+}
+
+.likeBtn.liked:hover {
+  background: #0056b3;
+}
+
+.actionBtn {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.startBtn {
+  background: #e8f1fd;
+  color: #0277FF;
+  border: 1px solid #c5deff;
+}
+
+.startBtn:hover {
+  background: #d4e4fa;
+  transform: scale(0.98);
+}
+
+.stopBtn {
+  background: #023dff;
+  color: white;
+  border: none;
+}
+
+.stopBtn:hover {
+  background: #dc3117;
+  transform: scale(0.98);
+}
+
+.continueBtn {
+  background: #0277FF;
+  color: white;
+  border: none;
+}
+
+.continueBtn:hover {
+  background: #0056b3;
+  transform: scale(0.98);
+}
+
+.iconBtn {
+  width: 36px;
+  background: #f0f4fa;
+  color: #0277FF;
+  border: 1px solid #c5deff;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBtn:hover {
+  background: #e3eaf5;
+  transform: scale(0.98);
+}
+
+.deleteBtn {
+  background: #fee2e2;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+}
+
+.deleteBtn:hover {
+  background: #fecaca;
+}
+
+@media (max-width: 768px) {
+  .quizCard {
+    width: 200px;
+    min-height: 320px;
+    padding: 12px;
+  }
+  
+  .title {
+    font-size: 12px;
+  }
+  
+  .description {
+    font-size: 10px;
+    min-height: 40px;
+  }
+  
+  .tag {
+    padding: 3px 8px;
+    font-size: 8px;
+  }
+  
+  .joinBtn,
+  .actionBtn {
+    padding: 6px 0;
+    font-size: 10px;
+  }
+  
+  .likeBtn,
+  .iconBtn {
+    width: 32px;
+    font-size: 14px;
+  }
+}

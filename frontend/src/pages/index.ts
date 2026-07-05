@@ -1,0 +1,9 @@
+export { LoginPage } from './LoginPage';
+export { RegisterPage } from './RegisterPage';
+export { HomePage } from './HomePage';
+export { MoreQuizesPage } from './MoreQuizes';
+export { CreateQuizPage } from './CreateQuiz';
+export { QuizRoom } from './QuizRoom.tsx';
+export { QuizDetailsPage } from './QuizDetailsPage';
+export { EditQuizPage } from './EditQuiz';
+export { HostRoom } from './Host';

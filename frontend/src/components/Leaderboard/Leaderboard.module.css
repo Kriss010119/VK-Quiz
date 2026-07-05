@@ -1,0 +1,175 @@
+.leaderboardContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.podiumColumn {
+  flex: 0 0 40%;
+  min-width: 280px;
+}
+
+.podiumWrapper {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.podiumWrapper.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tableColumn {
+  flex: 1;
+  min-width: 280px;
+}
+
+.resultsTable {
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px;
+  background: #0277FF;
+  padding: 12px 16px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.headerPlace,
+.headerName,
+.headerScore {
+  color: white;
+}
+
+.headerPlace {
+  text-align: left;
+}
+
+.headerScore {
+  text-align: right;
+}
+
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px;
+  padding: 10px 16px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.topRow {
+  background: #0277FF;
+  color: white;
+}
+
+.topRow .rowPlace,
+.topRow .rowName,
+.topRow .rowScore {
+  color: white;
+}
+
+.middleRow {
+  background: #C5DEFF;
+  color: #0277FF;
+}
+
+.middleRow .rowPlace,
+.middleRow .rowName,
+.middleRow .rowScore {
+  color: #0277FF;
+}
+
+.tableRow:not(.topRow):not(.middleRow) {
+  background: white;
+  color: #1a1a2e;
+  border: 1px solid #e5e7eb;
+}
+
+.rowPlace {
+  font-weight: 700;
+  text-align: left;
+}
+
+.rowName {
+  font-weight: 500;
+  text-align: left;
+}
+
+.rowScore {
+  font-weight: 700;
+  text-align: right;
+}
+
+.actionButtons {
+  flex: 0 0 100%;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.exportBtn {
+  background: transparent;
+  border: 2px solid #1a1a2e;
+  color: #1a1a2e;
+}
+
+.exportBtn:hover {
+  background: #1a1a2e;
+  color: white;
+  border-color: #1a1a2e;
+}
+
+@media (max-width: 900px) {
+  .leaderboardContainer {
+    flex-direction: column;
+  }
+  
+  .podiumColumn,
+  .tableColumn {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+  }
+  
+  .actionButtons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .leaderboardContainer {
+    padding: 16px;
+    gap: 16px;
+  }
+  
+  .tableHeader,
+  .tableRow {
+    grid-template-columns: 60px 1fr 80px;
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+}

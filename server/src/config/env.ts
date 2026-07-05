@@ -15,7 +15,7 @@ export const config = {
   },
   
   jwt: {
-    secret: process.env.JWT_SECRET || 'default_secret_change_me',
+    secret: process.env.JWT_SECRET || 'def',
     expiresIn: process.env.JWT_EXPIRES_IN || '7d',
   },
   

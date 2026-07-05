@@ -1,36 +1,65 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.tmp
+*~
 
-# dependencies
-/node_modules
-/.pnp
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Node ---
+node_modules/
+.pnp/
 .pnp.js
 
-# testing
-/coverage
+# --- Frontend ---
+frontend/node_modules/
+frontend/.pnp/
+frontend/.pnp.js
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+frontend/coverage/
+frontend/.env
+frontend/.env*.local
+frontend/.env.development
+frontend/.env.production
 
-# next.js
-/.next/
-/out/
+# --- Backend ---
+server/node_modules/
+server/.pnp/
+server/.pnp.js
+server/dist/
+server/build/
+server/uploads/
+server/temp/
+server/logs/
+server/*.tsbuildinfo
+server/.env
+server/.env*.local
 
-# production
-/build
+# --- Docker ---
+*.log
+*.pid
+*.seed
+*.pid.lock
 
-# misc
-.DS_Store
+# --- Misc ---
+.env
+.env.local
+.env.*.local
 *.pem
-
-# debug
+*.crt
+*.key
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# local env files
-.env*.local
-.env
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts

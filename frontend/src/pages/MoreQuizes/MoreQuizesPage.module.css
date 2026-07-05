@@ -1,0 +1,69 @@
+.mainContent {
+  flex: 1;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.leftColumn {
+  flex: 0 0 75%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rightColumn {
+  flex: 0 0 25%;
+}
+
+.whiteCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardsContainer {
+  flex: 1;
+  min-height: 400px;
+  padding: 1rem;
+}
+
+.loadMoreWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.endMessage {
+  text-align: center;
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    flex-direction: column;
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 1rem;
+  }
+  
+  .cardsContainer {
+    padding: 0.75rem;
+  }
+}

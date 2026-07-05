@@ -1,0 +1,1 @@
+export { MoreQuizesPage } from './MoreQuizesPage';

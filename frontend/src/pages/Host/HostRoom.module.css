@@ -1,0 +1,347 @@
+.container {
+  min-height: 100vh;
+  background: #0088ff;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.quizCard {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: #0088ff;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.quizTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: 1px;
+}
+
+.hostName {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.roomInfo {
+  margin-bottom: 32px;
+}
+
+.roomCodeCard {
+  background: #eaf2ff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.roomCodeLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.roomCodeValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0088ff;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.copyBtn {
+  background: #0088ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.waitingArea {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.waitingMessage {
+  text-align: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #c5deff;
+  border-top-color: #0088ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.startBtn {
+  width: 100%;
+  background: #0088ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.startBtn:hover:not(:disabled) {
+  background: #0277ff;
+}
+
+.startBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.questionArea {
+  flex: 1;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.questionNumber {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.statsBadge {
+  background: white;
+  border: 1px solid #0088ff;
+  border-radius: 999px;
+  padding: 6px 16px;
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0088ff;
+}
+
+.progressBarContainer {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 6px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.progressBar {
+  background: #0088ff;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.questionBox {
+  background: #0088ff;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.questionBox p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.questionImage {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.questionImage img {
+  max-width: 100%;
+  max-height: 240px;
+  border-radius: 10px;
+  border: 2px solid #c5deff;
+  object-fit: contain;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.optionPreview {
+  background: white;
+  border-radius: 6px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.optionLetter {
+  width: 24px;
+  height: 24px;
+  background: #c5deff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0277ff;
+}
+
+.optionText {
+  flex: 1;
+  font-size: 12px;
+  color: #1a1a2e;
+}
+
+.nextBtn {
+  width: 100%;
+  background: #0088ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nextBtn:hover {
+  background: #0277ff;
+}
+
+.answerResults {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.answerResultRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.answerBlock {
+  flex: 1;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.answerCorrect {
+  background: #4caf50;
+}
+
+.answerWrong {
+  background: #ff4d4d;
+}
+
+.voteCount {
+  width: 80px;
+  text-align: center;
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.leaderboardArea {
+  flex: 1;
+  padding: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 48px;
+  font-size: 14px;
+  color: white;
+}
+
+.hostActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stopHostBtn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.stopHostBtn:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .quizCard {
+    padding: 16px;
+  }
+  
+  .topBar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .roomCodeValue {
+    font-size: 20px;
+  }
+}

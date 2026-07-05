@@ -1,0 +1,212 @@
+.quizCard {
+  background: #E8F1FD;
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.authorName {
+  font-size: 12px;
+  color: #6b7280;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.quizTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: 1px;
+}
+
+.questionArea {
+  flex: 1;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.questionNumber {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.statsBadge {
+  background: #e8f1fd;
+  border: 1px solid #c5deff;
+  border-radius: 999px;
+  padding: 6px 16px;
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0277FF;
+}
+
+.questionBox {
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.questionBox p {
+  color: #0277FF;
+}
+
+.questionImage {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.questionImage img {
+  max-width: 100%;
+  max-height: 240px;
+  border-radius: 10px;
+  border: 2px solid #c5deff;
+  object-fit: contain;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.optionBtn {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  text-align: left;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.optionBtn:hover:not(:disabled) {
+  background: #C5DEFF;
+  color: #0277FF;
+}
+
+.option-letter {
+  font-weight: 700;
+  min-width: 20px;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.optionLetter {
+  font-weight: 700;
+  min-width: 20px;
+}
+
+.optionText {
+  flex: 1;
+}
+
+.option-selected {
+  background: #C5DEFF;
+  border: 1px solid #0088FF;
+  color: #0277FF;
+}
+
+.option-correct {
+  background: #d4edda;
+  border: 2px solid #28a745;
+  color: #155724;
+}
+
+.option-wrong {
+  background: #f8d7da;
+  border: 2px solid #dc3545;
+  color: #721c24;
+}
+
+.option-result-default {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #6b7280;
+}
+
+.voteBadge {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #e8f1fd;
+  border: 1px solid #c5deff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0277FF;
+}
+
+.savedMessage {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 11px;
+  color: #4caf50;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.waitingText {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 11px;
+  color: #6b7280;
+  font-family: 'Intel One Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .quizCard {
+    padding: 16px;
+  }
+  
+  .topBar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .questionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .optionBtn {
+    padding: 12px 14px;
+  }
+}

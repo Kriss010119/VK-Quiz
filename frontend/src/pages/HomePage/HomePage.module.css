@@ -1,0 +1,150 @@
+.mainContent {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  gap: 2rem;
+  width: calc(100% - 280px);
+  box-sizing: border-box;
+}
+
+.leftColumn {
+  flex: 0 0 75%;
+  min-width: 0;
+}
+
+.rightColumn {
+  flex: 0 0 25%;
+  margin: 0;
+  padding: 0;
+}
+
+.searchResultsCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.searchResultsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.searchResultsTitleBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.searchResultsTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0277FF;
+  margin: 0;
+  font-family: 'Intel One Mono', monospace;
+  letter-spacing: 0.5px;
+}
+
+.searchResultsCount {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.closeSearchBtn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #6b7280;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s;
+  font-family: monospace;
+}
+
+.closeSearchBtn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.searchResultsContent {
+  padding: 1.5rem;
+  min-height: 300px;
+}
+
+.searchResultsContent :global(.cardsGrid) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.createBtn,
+.createTestBtn {
+  background: var(--color-primary);
+  color: var(--text-white);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2) var(--spacing-4);
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.createBtn:hover,
+.createTestBtn:hover {
+  background: var(--color-primary-dark);
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    flex-direction: column;
+    padding: 1.5rem;
+    width: calc(100% - 260px);
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  
+  .searchResultsHeader {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .searchResultsTitleBlock {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .searchResultsContent {
+    padding: 1rem;
+  }
+  
+  .searchResultsContent :global(.cardsGrid) {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.75rem;
+  }
+}

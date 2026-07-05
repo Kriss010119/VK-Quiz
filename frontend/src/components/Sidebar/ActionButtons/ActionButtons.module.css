@@ -1,0 +1,64 @@
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.editBtn {
+  flex: 0 0 20%;
+  background: #E8F1FD;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+}
+
+.editBtn img {
+  width: 16px;
+  height: 16px;
+}
+
+.editBtn:hover {
+  background: #d0e4ff;
+}
+
+.deleteBtn {
+  flex: 0 0 calc(40% - 0.25rem);
+  background: #FF000059;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 36px;
+}
+
+.deleteBtn:hover {
+  background: #ff000070;
+}
+
+.logoutBtn {
+  flex: 0 0 calc(40% - 0.25rem);
+  background: #0088FF80;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'Intel One Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 36px;
+}
+
+.logoutBtn:hover {
+  background: #0088FF99;
+}

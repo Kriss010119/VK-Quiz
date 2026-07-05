@@ -1,0 +1,43 @@
+.layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: #0277FF;
+}
+
+.main {
+  width: calc(100% - 280px);
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+}
+
+.main.fullWidth {
+  width: 100%;
+}
+
+.sidebarArea {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    width: calc(100% - 240px);
+    padding: 1.5rem;
+  }
+  
+  .sidebarArea {
+    width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .sidebarArea {
+    display: none;
+  }
+}

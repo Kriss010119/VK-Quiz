@@ -1,0 +1,95 @@
+.winnersTable {
+  background: #E8F1FD;
+  border: 2px solid #0277FF;
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem 0.25rem 0 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem;
+  flex: 1;
+  min-height: 0;
+  max-height: 260px;
+}
+
+.podiumColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.firstPlace {
+  order: 2;
+}
+
+.secondPlace {
+  order: 1;
+}
+
+.thirdPlace {
+  order: 3;
+}
+
+.medalWrapper {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.medalIcon {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.pedestal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pedestalBar {
+  width: 100%;
+  max-width: 50px;
+  border-radius: 4px 4px 0 0;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pedestalHigh {
+  height: 160px;
+  background: #0277FF;
+}
+
+.pedestalMedium {
+  height: 100px;
+  background: white;
+}
+
+.pedestalLow {
+  height: 130px;
+  background: #C5DEFF;
+}
+
+.playerName {
+  font-size: 0.5rem;
+  text-align: center;
+  word-break: break-word;
+  max-width: 50px;
+  line-height: 1.2;
+}
+
+.nameDark {
+  color: #0277FF;
+}
+
+.nameLight {
+  color: white;
+}

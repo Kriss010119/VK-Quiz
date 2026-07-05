@@ -1,0 +1,133 @@
+.participantsBlock {
+  background: white;
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.blockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25rem;
+  flex-shrink: 0;
+}
+
+.blockTitle {
+  color: #0277FF;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.blockPlayersCount {
+  color: #0277FF;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.participantsList {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.participantsList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.participantsList::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+.participantsList::-webkit-scrollbar-thumb {
+  background: #0277FF;
+  border-radius: 4px;
+}
+
+.participantRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.participantAvatar {
+  width: 28px;
+  height: 28px;
+  background: #c5deff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #0277ff;
+  flex-shrink: 0;
+}
+
+.participantName {
+  flex: 1;
+  font-size: 11px;
+  font-weight: 500;
+  color: #0277ff;
+  font-family: 'Intel One Mono', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.participantStatus {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.answeredStatus {
+  font-size: 10px;
+  font-weight: 600;
+  color: #0088FF;
+  padding: 2px 6px;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.notAnsweredStatus {
+  font-size: 10px;
+  font-weight: 600;
+  color: #FF0000;
+  padding: 2px 6px;
+  font-family: 'Intel One Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .participantRow {
+    padding: 4px 6px;
+  }
+  
+  .participantAvatar {
+    width: 24px;
+    height: 24px;
+    font-size: 9px;
+  }
+  
+  .participantName {
+    font-size: 10px;
+  }
+  
+  .answeredStatus,
+  .notAnsweredStatus {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+}

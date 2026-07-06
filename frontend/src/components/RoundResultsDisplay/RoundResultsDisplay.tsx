@@ -34,7 +34,6 @@ export const RoundResultsDisplay = ({
 } : RoundResultsDisplayProps) => {
   return (
     <div className={styles.roundResults}>
-      {/* Отображаем вопрос с подсветкой правильных/неправильных ответов */}
       <QuestionDisplay
         questionNumber={questionNumber}
         totalQuestions={totalQuestions}

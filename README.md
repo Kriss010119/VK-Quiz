@@ -16,6 +16,7 @@ git clone <link>
 docker compose up --build -d
 ```
 
+
 ---
 # Прототип базы данных
 
@@ -24,6 +25,13 @@ docker compose up --build -d
 ---
 
 # Дизайн-макеты платформы
+
+## Дизайн-макеты платформы
+
+**Макет в Figma:**  
+https://www.figma.com/design/ck5bx0pBehhASE6tuM88Ib/%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BA%D0%B2%D0%B8%D0%B7%D0%BE%D0%B2?node-id=0-1&t=TI0HnJbk3kG3wSrK-1
+
+
 
 ## Главная страница
 

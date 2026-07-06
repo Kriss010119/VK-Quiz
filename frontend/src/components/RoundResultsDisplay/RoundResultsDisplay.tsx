@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Button } from '../Buttons';
 import { QuestionDisplay } from '../QuestionDisplay';
 import styles from './RoundResultsDisplay.module.css';

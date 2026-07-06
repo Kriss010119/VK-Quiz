@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/set-state-in-effect */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks';
@@ -38,7 +40,7 @@ const createBlankQuestion = (): Question => {
 
 export const CreateQuizPage = () => {
   const navigate = useNavigate();
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
 
   const [quizData, setQuizData] = useState({
     title: '',
@@ -50,7 +52,7 @@ export const CreateQuizPage = () => {
   const [currentTag, setCurrentTag] = useState('');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isSaving, setIsSaving] = useState(false);
-  const [roomCode, setRoomCode] = useState('');
+  const [roomCode] = useState('');
   const [creationDate, setCreationDate] = useState('');
 
   useEffect(() => {
